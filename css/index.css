@@ -1,0 +1,929 @@
+header {
+  width: 100%;
+}
+
+section {
+  margin: auto;
+  background: #ecf0f5;
+  width: 100%;
+  overflow: auto;
+  clear: both;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .leftContent {
+    margin-left: -230px;
+    z-index: 100;
+  }
+  .leftnav {
+    width: 100% !important;
+    display: block;
+    clear: both;
+  }
+  .nav-pills > li:nth-child(4) > a > span {
+    display: none;
+  }
+  .breadcrumb {
+    width: 100%;
+    float: left !important;
+    background: #d2d6de !important;
+    border-radius: 5px;
+    margin-top: 10px !important;
+  }
+  .sige {
+    margin: 0 !important;
+    margin-top: 35px !important;
+  }
+  .topfont {
+    margin: 0 !important;
+  }
+  .allht {
+    margin: 0 !important;
+  }
+  .glyphicon-briefcase {
+    display: none;
+  }
+  .allht {
+    width: 100%;
+  }
+  .htleft {
+    width: 100% !important;
+  }
+  .tiantian {
+    overflow: hidden;
+    white-space: nowrap;
+    text-emphasis: none;
+    padding: 0 !important;
+  }
+  .htright {
+    width: 100% !important;
+  }
+}
+
+.leftnav {
+  float: left;
+  width: 230px;
+  text-align: center;
+  padding: 11px 15px;
+  font-size: 20px;
+  color: #fff;
+  background: #367fa9;
+  transition: all 0.1s;
+}
+
+.rightnav {
+  width: 100%;
+  background: #3c8dbc;
+}
+
+.rightnav .zk {
+  display: inline-block;
+  width: 45px;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.rightnav .zk > a {
+  color: #fff;
+}
+
+.rightnav .zk:hover {
+  background: #367fa9;
+}
+
+.rightnav .xxdw, .rightnav .Rn li > a .s1, .rightnav .Rn li > a .s2, .rightnav .Rn li > a .s3 {
+  position: absolute;
+  left: 15px;
+  top: 5px;
+}
+
+.rightnav .Rn {
+  float: right;
+  padding: 0;
+}
+
+.rightnav .Rn li > a {
+  padding: 15px;
+  color: #fff;
+  position: relative;
+}
+
+.rightnav .Rn li > a .s1 {
+  background: #00a65a;
+}
+
+.rightnav .Rn li > a .s2 {
+  background: #f39c12;
+}
+
+.rightnav .Rn li > a .s3 {
+  background: #dd4b39;
+}
+
+.userimg {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  float: left;
+}
+
+.span {
+  margin-left: 10px;
+  font-size: 13px;
+}
+
+.ZhuangZai {
+  width: 280px;
+  height: 269px;
+  background: #fff;
+  display: inline-block;
+  position: absolute;
+  top: 50px;
+  left: -100000px;
+  z-index: 100;
+}
+
+.ZhuangZai > p:nth-child(1) {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  font-size: 12px;
+  margin: 0;
+}
+
+.ZhuangZai > p:nth-child(3) {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-size: 12px;
+}
+
+.ZhuangZai > ul {
+  width: 280px;
+  height: 200px;
+  overflow-y: scroll;
+  padding: 0;
+  margin: 0;
+}
+
+.ZhuangZai > ul > li {
+  border-bottom: 1px solid #ccc;
+}
+
+.ZhuangZai > ul > li > a {
+  position: relative;
+}
+
+.ZhuangZai > ul > li > a > img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  float: left;
+}
+
+.ZhuangZai > ul > li > a > h4 {
+  font-size: 14px;
+  color: #000000;
+  font-weight: 600;
+  margin-top: 1px;
+  margin-left: 50px;
+  padding-right: 50px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ZhuangZai > ul > li > a > p {
+  font-size: 10px;
+  color: #ccc;
+  white-space: nowrap;
+  margin-left: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ZhuangZai > ul > li > a > b {
+  font-size: 10px;
+  color: #000;
+  font-weight: normal;
+  margin-left: 10px;
+  float: left;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.ZhuangZai > ul > li > a {
+  overflow: hidden;
+  clear: both;
+}
+
+.ZhuangZai .progress {
+  height: 7px;
+}
+
+.ZhuangZai .nav-stacked > li > a > h3 {
+  font-size: 14px;
+  color: #000;
+  margin: 0 0 10px;
+}
+
+.ZhuangZai .qq {
+  float: left;
+}
+
+.ZhuangZai .wy {
+  position: absolute;
+  right: 0;
+  top: 11px;
+}
+
+.ZhuangZai .glyphicon-time {
+  font-size: 8px;
+  color: #ccc;
+}
+
+.ZhuangZai .glyphicon-time + p {
+  font-size: 12px;
+  color: #ccc;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-left: 5px;
+}
+
+.ZZtwo {
+  background: #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  position: absolute;
+  top: 50px;
+  left: -100000px;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding-bottom: 10px;
+  z-index: 100;
+}
+
+.ZZtwo > ul > li > a:hover {
+  background: none;
+}
+
+.ZZtwo > ul > li > a > h1 {
+  color: #fff;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.ZZtwo > ul > li > a > p {
+  color: #fff;
+  font-size: 10px;
+}
+
+.ZZtwo > ul > li > a > span {
+  color: #000;
+}
+
+.ZZtwo > ul > li > a > span:nth-child(1) {
+  float: left;
+}
+
+.ZZtwo > ul > li > a > span:nth-child(2) {
+  float: right;
+}
+
+.ZZtwo > ul > li:nth-child(1) {
+  background: #3c8dbc;
+}
+
+.ZZtwo img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.leftContent {
+  min-height: 100%;
+  background: #222d32;
+  width: 230px;
+  position: absolute;
+  left: 0;
+}
+
+.leftContent > ul > li > a {
+  color: #fff;
+}
+
+.leftContent > ul > li > a:hover {
+  background: #1a2226;
+}
+
+.leftContent > ul > li > a > img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: -7px;
+}
+
+.leftContent > ul > li > a:focus {
+  display: none;
+}
+
+.leftContent > .nav-divider {
+  width: 100%;
+  overflow: auto;
+  clear: both;
+}
+
+.leftContent > .nav-divider > li:nth-child(13),
+.leftContent > .nav-divider > li:nth-child(1) {
+  width: 100%;
+  background: #1a2226;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.leftContent > .nav-divider > li:nth-child(13) > a,
+.leftContent > .nav-divider > li:nth-child(1) > a {
+  font-size: 10px;
+  color: #4b646f;
+}
+
+.leftContent > .nav-divider > li > a:focus {
+  background: none;
+}
+
+.leftContent .xzl {
+  border-left: 4px solid #3c8dbc;
+}
+
+.leftContent .axzl {
+  background: #1a2226 !important;
+  color: #fff !important;
+}
+
+.leftContent > .nav-divider > li > a:hover {
+  background: #1a2226;
+  color: #fff;
+}
+
+.leftContent > .nav-divider > li > a {
+  color: #b8c7ce;
+}
+
+.leftContent > .nav-divider > li > a > p {
+  margin: 0;
+}
+
+.leftContent > .nav-divider > li > a > span {
+  margin-left: 10px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.leftContent > .nav-divider > li > a > b {
+  margin-right: 5px;
+  border-radius: 3px;
+}
+
+.leftContent .glyphicon-chevron-right {
+  transition: all 1s;
+}
+
+.leftContent .ll > li > a > span {
+  padding: 4px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #b8c7ce;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.leftContent .ll > li > a {
+  font-size: 13px;
+  color: #b8c7ce;
+}
+
+.leftContent .ll > li > a:hover {
+  background: none;
+  color: #fff;
+}
+
+.leftContent .ll {
+  overflow: hidden;
+}
+
+.leftContent .ll > li > a:focus {
+  background: none;
+}
+
+.l1 {
+  padding: 4px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #dd4b39;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.l2 {
+  padding: 4px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #f39c12;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.l3 {
+  padding: 4px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #00c0ef;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.navTop {
+  font-size: 20px;
+  color: #fff;
+  background: #367fa9;
+  text-align: center;
+  padding: 10px 15px;
+}
+
+.navTop a {
+  color: #fff;
+}
+
+.usermid > div {
+  width: 50px;
+  padding: 10px;
+}
+
+.users {
+  padding: 10px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.users .userAvatar {
+  overflow: hidden;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.users .userAvatar img {
+  width: 100%;
+  height: 100%;
+}
+
+.users .userinformation {
+  display: inline-block;
+  padding: 0 15px;
+  position: absolute;
+  top: 15px;
+}
+
+.users .userinformation > p {
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+.users .userinformation > a {
+  color: #fff;
+  font-size: 10px;
+}
+
+.users .inputs {
+  width: 100%;
+  margin: 10px auto;
+}
+
+.users .inputs .form-control {
+  width: 170px;
+  border: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 7px 15px;
+  outline: none;
+  color: #666;
+  background: #374850;
+}
+
+.users .inputs > .btn {
+  background-color: #374850;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.users .inputs > .btn > i {
+  color: #999;
+}
+
+.users .inputs .form-control:focus + .btn {
+  background: #fff;
+}
+
+.users .inputs .form-control:focus {
+  background: #fff;
+}
+
+.jj {
+  background: #222d32;
+  position: absolute;
+  top: -10000px;
+  left: 50px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.jj > li {
+  width: 200px;
+}
+
+.jj > li > a {
+  color: #fff;
+  background: #000000;
+}
+
+.jj > li > ul > li > a > span {
+  padding: 4px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #b8c7ce;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.jj > li > ul > li > a {
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.jj > li > a:hover {
+  background: none;
+}
+
+.jj > li > a:focus {
+  background: none;
+}
+
+.jj > li > ul > li > a:hover {
+  background: none;
+}
+
+.jj > li > ul > li > a:focus {
+  background: none;
+}
+
+.topfont {
+  display: block;
+  padding: 15px;
+  margin-left: 230px;
+}
+
+.topfont > h1 {
+  display: inline-block;
+  font-size: 20px;
+  margin: 0;
+  margin-left: 10px;
+}
+
+.breadcrumb {
+  display: inline-block;
+  border-width: 0;
+  font-size: 10px;
+  float: right;
+  background: none;
+  margin: 0;
+}
+
+.breadcrumb > li > a {
+  margin: 0;
+  color: #000;
+  padding: 10px 5px;
+  font-size: 10px;
+}
+
+.breadcrumb > li:last-child > a {
+  padding: 10px;
+  color: #ccc;
+}
+
+.sige {
+  display: block;
+  padding: 15px;
+  margin-left: 230px;
+}
+
+.d1 {
+  background: #00c0ef !important;
+  padding: 15px 10px;
+  position: relative;
+}
+
+.d1 > .inner {
+  color: #fff;
+  position: relative;
+}
+
+.d1 > .inner > h1 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.d1 .glyphicon-briefcase {
+  font-size: 90px;
+  position: absolute;
+  right: 0;
+  color: rgba(0, 0, 0, 0.15);
+  transition: all 0.5s;
+}
+
+.d1 .glyphicon-briefcase:hover {
+  animation: dh linear 0.5s  both;
+}
+
+.bottomd1:hover {
+  background: red;
+  color: #fff;
+}
+
+.bottomd1 {
+  display: block;
+  background: #000;
+  opacity: 0.1;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.glyphicon-circle-arrow-right {
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+.allht {
+  display: block;
+  margin-left: 230px;
+  padding: 0 15px;
+  clear: both;
+  height: 400px;
+}
+
+.htleft {
+  width: 55%;
+}
+
+.Sales {
+  width: 100%;
+  background: #fff;
+}
+
+.Uu {
+  width: 100%;
+}
+
+.Uu > li > a {
+  color: #000;
+  box-sizing: border-box;
+}
+
+.Uu > li:first-child > a:hover {
+  background: none;
+  color: #000;
+  border: none;
+}
+
+.Uu > li > a:hover {
+  background: none;
+  color: #ccc;
+  border: none;
+}
+
+.Uu > li > a:focus {
+  background: none;
+}
+
+.Uu .glyphicon-folder-close {
+  margin-right: 10px;
+}
+
+.active {
+  background: #ccc;
+  border-top: 2px solid #3c8dbc;
+}
+
+.active a {
+  margin: 0 !important;
+}
+
+.xs {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #00a65a;
+  border-radius: 50%;
+  margin: 0;
+}
+
+.ds {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #dd4b39;
+  border-radius: 50%;
+  margin: 0;
+}
+
+.ppap {
+  border-top: 5px solid #00a65a;
+  margin-top: 20px;
+  background: #fff;
+}
+
+.ppap > li:nth-child(1) > a {
+  font-size: 18px;
+  color: #999;
+  padding: 19px;
+}
+
+.ppap > li:nth-child(1) > a > i {
+  margin-right: 10px;
+}
+
+.ppap > li > a:hover {
+  background: none;
+  border: none;
+}
+
+.lt > li > a {
+  overflow: hidden;
+  clear: both;
+}
+
+.lt > li > a > img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid #00a65a;
+  float: left;
+  margin-right: 20px;
+}
+
+.lt {
+  background: #fff;
+}
+
+.wy {
+  color: #999;
+  font-size: 13px;
+}
+
+.wy > p {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.lol {
+  font-size: 13px;
+}
+
+.tiantian {
+  padding: 0 65px;
+  font-size: 13px;
+  color: #000;
+}
+
+.lt > li > a:hover {
+  background: none;
+}
+
+.lt > li > a:focus {
+  background: none;
+}
+
+.lt > li:last-child {
+  border-top: 1px solid #ccc;
+}
+
+.lt > li:last-child > a {
+  width: 100%;
+  position: relative;
+}
+
+.lt > li:last-child > a > span {
+  display: inline-block;
+  background: #00a65a;
+  padding: 12px;
+  position: absolute;
+  right: 15px;
+}
+
+.lt > li:last-child > a > span > i {
+  color: #fff;
+}
+
+.lt > li > a > input {
+  width: 100%;
+  padding: 10px;
+}
+
+.td {
+  border-top: 5px solid #3c8dbc !important;
+  margin: 0;
+  background: #fff;
+}
+
+.td > li:last-child > ul {
+  margin: 0;
+  padding: 10px 15px;
+}
+
+.jie {
+  background: #fff;
+}
+
+.jie > li {
+  padding: 15px;
+}
+
+.jie > li > a {
+  background: #f4f4f4;
+  color: #000;
+}
+
+.jie > li > a > input {
+  margin-left: 15px;
+}
+
+.jie > li > a > .badge {
+  margin-left: 15px;
+  border-radius: 5px;
+  background: #dd4b39;
+}
+
+.glyphicon-play-circle {
+  margin-right: 10px;
+}
+
+.glyphicon-trash {
+  margin-right: 10px;
+  color: #dd4b39;
+  display: none;
+}
+
+.glyphicon-trash, .glyphicon-edit {
+  color: #dd4b39;
+  display: none;
+}
+
+.jie > li > a:hover > .glyphicon-edit {
+  display: block;
+}
+
+.jie > li > a:hover > .glyphicon-trash {
+  display: block;
+}
+
+.htright {
+  width: 43%;
+  margin-left: 10px;
+}
+
+.yu {
+  background: #3c8dbc;
+}
+
+.yu > li > a {
+  color: #fff;
+}
+
+.yu > li > a > i {
+  margin-right: 10px;
+  color: #fff;
+  font-size: 15px;
+}
+
+.map {
+  width: 100%;
+  height: 300px;
+}
+
+@keyframes dh {
+  100% {
+    font-size: 100px;
+  }
+}

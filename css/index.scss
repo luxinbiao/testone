@@ -1,0 +1,871 @@
+//导航条部分
+header {
+    width: 100%;
+}
+section {
+    margin: auto;
+    background: #ecf0f5;
+    width: 100%;
+    overflow: auto;
+    clear: both;
+    position:relative;
+    
+};
+//导航条响应式
+@media screen and (max-width: 768px) {
+    .leftContent {
+       margin-left:-230px;
+       z-index:100;
+    }
+    .leftnav {
+        width: 100% !important;
+        display: block;
+        clear: both;
+    }
+    .nav-pills > li:nth-child(4) > a > span {
+        display: none;
+    }
+    .breadcrumb {
+        width: 100%;
+        float: left !important;
+        background: #d2d6de !important;
+        border-radius: 5px;
+        margin-top:10px !important;
+    }
+    .sige
+    {
+        margin: 0 !important;
+        margin-top:35px !important;
+    }
+    .topfont
+    {
+        margin: 0 !important;
+    }
+    .allht
+    {
+        margin: 0 !important;
+    }
+    .glyphicon-briefcase
+    {
+        display: none;
+    }
+    .allht
+    {
+        width:100%;
+    }
+    .htleft
+    {
+        width:100% !important;
+    }
+    .tiantian
+    {
+        overflow: hidden;
+        white-space: nowrap;
+        text-emphasis: none;
+        padding:0 !important;
+    }
+    .htright
+    {
+        width:100% !important;
+    }
+}
+.leftnav {
+    float: left;
+    width: 230px;
+    text-align: center;
+    padding: 11px 15px;
+    font-size: 20px;
+    color: #fff;
+    background: #367fa9;
+    transition: all 0.1s;
+}
+.rightnav {
+    width: 100%;
+    background: #3c8dbc;
+    .zk {
+        display: inline-block;
+        width: 45px;
+        text-align: center;
+        padding: 15px 0;
+        > a {
+            color: #fff;
+        }
+        &:hover {
+            background: #367fa9;
+        }
+    }
+    //消息的定位
+    .xxdw {
+        position: absolute;
+        left: 15px;
+        top: 5px;
+    }
+    .Rn {
+        float: right;
+        padding: 0;
+        li > a {
+            padding: 15px;
+            color: #fff;
+            position: relative;
+            .s1 {
+                @extend .xxdw;
+                background: #00a65a;
+            }
+            .s2 {
+                @extend .xxdw;
+                background: #f39c12;
+            }
+            .s3 {
+                @extend .xxdw;
+                background: #dd4b39;
+            }
+        }
+    }
+}
+
+.userimg {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    float: left;
+}
+.span {
+    margin-left: 10px;
+    font-size: 13px;
+}
+//装载内容
+.ZhuangZai {
+    width: 280px;
+    height: 269px;
+    background: #fff;
+    display: inline-block;
+    position: absolute;
+    top: 50px;
+    left: -100000px;
+    z-index: 100;
+    > p:nth-child(1) {
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        font-size: 12px;
+        margin: 0;
+    }
+    > p:nth-child(3) {
+        padding: 10px;
+        border: 1px solid #ccc;
+        text-align: center;
+        font-size: 12px;
+    }
+    > ul {
+        width: 280px;
+        height: 200px;
+        overflow-y: scroll;
+        padding: 0;
+        margin: 0;
+    }
+    > ul > li {
+        border-bottom: 1px solid #ccc;
+    }
+    > ul > li > a {
+        position: relative;
+    }
+    > ul > li > a > img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        float: left;
+    }
+    > ul > li > a > h4 {
+        font-size: 14px;
+        color: #000000;
+        font-weight: 600;
+        margin-top: 1px;
+        margin-left: 50px;
+        padding-right: 50px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    > ul > li > a > p {
+        font-size: 10px;
+        color: #ccc;
+        white-space: nowrap;
+        margin-left: 50px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    > ul > li > a > b {
+        font-size: 10px;
+        color: #000;
+        font-weight: normal;
+        margin-left: 10px;
+        float: left;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    > ul > li > a {
+        overflow: hidden;
+        clear: both;
+    }
+    .progress {
+        height: 7px;
+
+    }
+    .nav-stacked > li > a > h3 {
+        font-size: 14px;
+        color: #000;
+        margin: 0 0 10px;
+    }
+    .qq {
+        float: left;
+    }
+    .wy {
+        position: absolute;
+        right: 0;
+        top: 11px;
+    }
+    .glyphicon-time {
+        font-size: 8px;
+        color: #ccc;
+    }
+    .glyphicon-time+p {
+        font-size: 12px;
+        color: #ccc;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        margin-left: 5px;
+    }
+
+}
+//第二装载内容
+.ZZtwo {
+    background: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: absolute;
+    top: 50px;
+    left: -100000px;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding-bottom: 10px;
+    z-index: 100;
+    > ul > li > a:hover {
+        background: none;
+    }
+    > ul > li > a > h1 {
+        color: #fff;
+        font-size: 16px;
+        white-space: nowrap;
+    }
+    > ul > li > a > p {
+        color: #fff;
+        font-size: 10px;
+    }
+    > ul > li > a > span {
+        color: #000;
+    }
+    > ul > li > a > span:nth-child(1) {
+        float: left;
+    }
+    > ul > li > a > span:nth-child(2) {
+        float: right;
+    }
+    > ul > li:nth-child(1) {
+        background: #3c8dbc;
+    }
+    img {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+    }
+}
+//左边内容
+.leftContent {
+    min-height: 100%;
+    background: #222d32;
+    width: 230px;
+    position:absolute;
+    left:0;
+    > ul > li > a {
+        color: #fff;
+    }
+    > ul > li > a:hover {
+        background: #1a2226;
+    }
+    > ul > li > a > img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-left: -7px;
+
+    }
+    > ul > li > a:focus {
+        display: none;
+    }
+    > .nav-divider {
+        width: 100%;
+        overflow: auto;
+        clear: both;
+    }
+     > .nav-divider > li:nth-child(13),
+    > .nav-divider > li:nth-child(1) {
+        width: 100%;
+        background: #1a2226;
+        padding-left: 0;
+        padding-right: 0;
+    }
+     > .nav-divider > li:nth-child(13) > a,
+    > .nav-divider > li:nth-child(1) > a {
+        font-size: 10px;
+        color: #4b646f;
+    }
+    > .nav-divider > li > a:focus {
+        background: none;
+    }
+    .xzl {
+        border-left: 4px solid #3c8dbc;
+    }
+    .axzl {
+        background: #1a2226 !important;
+        color: #fff !important;
+    }
+    > .nav-divider > li > a:hover {
+        background: #1a2226;
+        color: #fff;
+    }
+    > .nav-divider > li > a {
+        color: #b8c7ce;
+    }
+    > .nav-divider > li > a > p {
+        margin: 0;
+    }
+    > .nav-divider > li > a > span {
+        margin-left: 10px;
+        font-size: 13px;
+        font-weight: 600;
+    }
+    > .nav-divider > li > a > b {
+        margin-right: 5px;
+        border-radius: 3px;
+    }
+    .glyphicon-chevron-right {
+        transition: all 1s;
+    }
+    .ll > li > a > span {
+        padding: 4px;
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border: 2px solid #b8c7ce;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    .ll > li > a {
+        font-size: 13px;
+        color: #b8c7ce;
+    }
+    .ll > li > a:hover {
+        background: none;
+        color: #fff;
+    }
+    .ll {
+        overflow: hidden;
+    }
+    .ll > li > a:focus {
+        background: none;
+    }
+}
+.l1 {
+    padding: 4px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #dd4b39;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.l2 {
+    padding: 4px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #f39c12;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.l3 {
+    padding: 4px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #00c0ef;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.navTop {
+    font-size: 20px;
+    color: #fff;
+    background: #367fa9;
+    text-align: center;
+    padding: 10px 15px;
+    a {
+        color: #fff;
+    }
+}
+
+.usermid > div {
+    width: 50px;
+    padding: 10px;
+}
+.users {
+    padding: 10px;
+    position: relative;
+    box-sizing: border-box;
+    .userAvatar {
+        overflow: hidden;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        display: inline-block;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .userinformation {
+        display: inline-block;
+        padding: 0 15px;
+        position: absolute;
+        top: 15px;
+        > p {
+            color: #fff;
+            text-align: center;
+            font-size: 13px;
+            font-weight: 600;
+            margin: 0;
+            padding: 0;
+        }
+        > a {
+            color: #fff;
+            font-size: 10px;
+        }
+    }
+    .inputs {
+        width: 100%;
+        margin: 10px auto;
+        .form-control {
+            width: 170px;
+            border: none;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            padding: 7px 15px;
+            outline: none;
+            color: #666;
+            background: #374850;
+        }
+        > .btn {
+            background-color: #374850;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            > i {
+                color: #999;
+            }
+        }
+        .form-control:focus+.btn {
+            background: #fff;
+        }
+        .form-control:focus {
+            background: #fff;
+        }
+    }
+}
+.jj {
+    background: #222d32;
+    position: absolute;
+    top: -10000px;
+    left: 50px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.jj > li {
+    width: 200px;
+}
+.jj > li > a {
+    color: #fff;
+    background: #000000;
+}
+
+.jj > li > ul > li > a > span {
+    padding: 4px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #b8c7ce;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.jj > li > ul > li > a {
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.jj > li > a:hover {
+    background: none;
+}
+.jj > li > a:focus {
+    background: none;
+}
+.jj > li > ul > li > a:hover {
+    background: none;
+}
+.jj > li > ul > li > a:focus {
+    background: none;
+}
+
+//中间内容
+
+.topfont {
+    display: block;
+    padding: 15px;
+    margin-left:230px ;
+        > h1 {
+        display: inline-block;
+        font-size: 20px;
+        margin: 0;
+        margin-left:10px;
+    }
+
+}
+.breadcrumb {
+    display: inline-block;
+    border-width: 0;
+    font-size: 10px;
+    float: right;
+    background:none;
+    margin:0;
+}
+.breadcrumb > li > a {
+    margin: 0;
+    color: #000;
+    padding: 10px 5px;
+    font-size: 10px;
+}
+.breadcrumb > li:last-child > a {
+    padding: 10px;
+    color: #ccc;
+}
+.sige
+{
+    display: block;
+    padding: 15px;
+    margin-left:230px;
+}
+.d1
+{
+   background: #00c0ef !important;
+    padding:15px 10px;
+    position:relative;
+    >.inner
+    {
+        color:#fff;
+        position:relative;
+    }
+    >.inner>h1
+    {
+     margin:0;
+     margin-bottom: 10px;
+    }
+    .glyphicon-briefcase
+    {
+        font-size:90px;
+        position:absolute;
+        right:0;
+        color:rgba(0,0,0,0.15);
+        transition: all 0.5s;
+    }
+     .glyphicon-briefcase:hover
+     {
+         animation: dh linear 0.5s  both;
+     }
+}
+.bottomd1:hover
+{
+    background:red;
+    color:#fff;
+}
+      .bottomd1
+     {
+         display: block;
+         background:#000;
+         opacity: 0.1;
+         text-align: center;
+         color:#fff;
+         margin-bottom: 10px;
+     }
+     .glyphicon-circle-arrow-right
+     {
+         margin-left:5px;
+         font-size:12px;
+     }
+     .allht
+     {
+       display: block;
+        margin-left:230px;
+        padding:0 15px;
+        clear: both;
+        height:400px;
+     }
+       .htleft
+     {
+         width:55%;
+     }
+     .Sales
+     {
+         width:100%;
+         background:#fff;
+     }
+     .Uu
+     {
+        width:100%;
+       >li>a
+       {
+           color:#000;
+           box-sizing: border-box;
+       }
+       >li:first-child>a:hover
+       {
+           background: none;
+           color:#000;
+           border:none;
+       }
+       >li>a:hover
+       {
+           background:none;
+           color:#ccc;
+           border:none;
+       }
+       >li>a:focus
+       {
+           background:none;
+       }
+       .glyphicon-folder-close
+       {
+           margin-right:10px ;
+       }
+     }
+     .active
+     {
+         background:#ccc;
+            border-top:2px solid #3c8dbc;   
+          
+     }
+      .active a
+      {
+        margin:0 !important;
+      }
+      .xs
+      {
+          display: inline-block;
+          width:12px;
+          height:12px;
+          background:#00a65a;
+          border-radius: 50%;
+          margin:0;
+      }
+      .ds
+      {
+          display: inline-block;
+          width:12px;
+          height:12px;
+          background:#dd4b39;
+          border-radius: 50%;
+          margin:0;
+      }
+      .ppap
+      {
+          border-top:5px solid rgb(0, 166, 90);
+          margin-top:20px;
+          background:#fff;
+      }
+      
+      .ppap>li:nth-child(1)>a
+      {
+         font-size:18px;
+         color:#999;
+         padding:19px;
+      }
+      .ppap>li:nth-child(1)>a>i
+      {
+          margin-right:10px ;
+      }
+      .ppap>li>a:hover
+      {
+          background:none;
+          border: none;
+      }
+      .lt>li>a
+      {
+          overflow: hidden;
+          clear: both;
+      }
+      .lt>li>a>img
+      {
+        width:45px;    
+        height:45px;
+        border-radius: 50%;
+        border: 2px solid #00a65a;
+        float:left;
+        margin-right: 20px;
+      }
+      .lt
+      {
+          background: #fff;
+      }
+      .wy
+      {
+          color:#999;
+          font-size:13px;
+      }
+      .wy>p
+      {
+          display:inline-block;
+          margin-left:10px;
+      }
+      .lol
+      {
+          font-size:13px;
+         
+      }
+      .tiantian
+      {
+          padding:0 65px;
+          font-size:13px;
+          color:#000;
+      }
+      .lt>li>a:hover
+      {
+          background: none;
+      }
+      .lt>li>a:focus
+      {
+          background: none;
+      }
+      .lt>li:last-child
+      {
+          border-top:1px solid #ccc;
+      }
+      .lt>li:last-child>a
+      {
+          width:100%;
+          position:relative;
+      }
+      .lt>li:last-child>a>span
+      {
+          display:inline-block;
+          background: rgb(0, 166, 90);
+          padding:12px;
+          position:absolute;
+          right:15px;
+      }
+      .lt>li:last-child>a>span>i
+      {
+          color:#fff;
+      }
+      .lt>li>a>input
+      {
+          width:100%;
+          padding:10px;
+      }
+      
+      .td
+      {
+           border-top:5px solid rgb(60, 141, 188) !important;
+           margin:0;
+           background:#fff;
+      }
+      .td>li:last-child>ul
+      {
+           margin:0;
+           padding:10px 15px;
+      }
+      .jie
+      {
+          background:#fff;
+      }
+      .jie>li
+      {    
+       padding:15px;   
+      }
+      .jie>li>a
+      {
+          background: #f4f4f4;
+          color:#000;
+      }
+      .jie>li>a>input
+      {
+       margin-left:15px;
+      }
+      .jie>li>a>.badge
+      {
+       margin-left:15px;
+        border-radius: 5px;
+        background:#dd4b39;
+      }
+      .glyphicon-play-circle
+      {
+          margin-right: 10px;
+      }
+      .glyphicon-trash
+      {
+          margin-right: 10px;
+          color:#dd4b39;
+          display:none;
+      }
+     .glyphicon-trash,.glyphicon-edit
+      {
+          color:#dd4b39;
+          display:none;
+      }
+       .jie>li>a:hover>.glyphicon-edit
+       {
+           display:block;
+       }
+       .jie>li>a:hover>.glyphicon-trash
+       {
+            display:block;
+       }
+      //画图class
+      //右边区域
+      .htright
+      {
+          width:43%;
+          margin-left:10px;
+      }
+      .yu
+      {
+          background: #3c8dbc;
+      }
+       .yu>li>a
+       {
+           color:#fff;
+       }
+        .yu>li>a>i
+      {
+          margin-right: 10px;
+          color:#fff;
+          font-size:15px;
+      }
+      .map
+    {
+        width:100%;
+        height:300px;
+    }
+//动画区域
+@keyframes dh
+{
+   100%
+   {
+       font-size:100px;
+   }
+}

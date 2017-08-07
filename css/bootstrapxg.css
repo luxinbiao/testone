@@ -1,0 +1,8 @@
+.nav-pills>li>a
+{
+				border-radius: 0;
+}
+.nav-pills>li:hover>a
+{
+	background:#367fa9;
+}

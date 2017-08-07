@@ -1,0 +1,32 @@
+*
+{
+    margin:0;
+    font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+*:focus
+{
+    background:none;
+}
+li>a:hover
+{
+    background:none;
+}
+body
+{
+    font-size:14px;
+    position:relative;
+    overflow-x:hidden ;
+    width:100%;
+}
+ul
+{
+    list-style: none;
+}
+a
+{
+    text-decoration: none;
+}
+a:hover,
+a:focus {
+  text-decoration:none;
+}
